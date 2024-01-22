@@ -15,6 +15,7 @@ async function getdata(){
        <span>
        ${ele.price}$
        </span>
+       <p>${ele.brand}</p>
        </div>
        
     `;
@@ -23,7 +24,8 @@ async function getdata(){
         
            
     } ).join('');
-
+    
+console.log(products);
    
    document.querySelector(".products").innerHTML+=result;
             
